@@ -42,3 +42,5 @@ my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.text("THE FRUIT LOAD LIST CONTAINS:")
 streamlit.text(my_data_rows)
+
+add_my_fruit =INSERT INTO FRUIT_LOAD_LIST VALUES ('jackfruit');
