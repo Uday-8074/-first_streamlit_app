@@ -43,4 +43,5 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("THE FRUIT LOAD LIST CONTAINS:")
 streamlit.text(my_data_rows)
 
-add_my_fruit =INSERT INTO FRUIT_LOAD_LIST VALUES ('jackfruit');
+add_my_fruit =streamlit.text_input('What fruit would you like to add?','jackfruit')
+streamlit.write('The user entered ', fruit_choice)
