@@ -62,6 +62,6 @@ streamlit.text(my_data_rows)
      #streamlit.dataframe(my_data_rows)
       
      #back_from_function = insert_row_snowflake(add_my_fruit)
-     streamlit.text(back_from_function)
+     #streamlit.text(back_from_function)
      
 
