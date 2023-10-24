@@ -12,7 +12,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 
 streamlit.dataframe(my_fruit_list)
 # Let's put a pick list here so they can pick the fruit they want to include 
-fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['canteloupe'])
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 # Display the table on the page.
@@ -20,7 +20,7 @@ streamlit.dataframe(fruits_to_show)
 
 streamlit.header('Fruityvice Fruit Advice!')
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+fruit_choice = streamlit.text_input('What fruit would you like information about?','Orange')
 streamlit.write('The user entered ', fruit_choice)
 
 
@@ -43,7 +43,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("THE FRUIT LOAD LIST CONTAINS:")
 streamlit.text(my_data_rows)
 
-add_my_fruit =streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('The user added','jackfruit')
+add_my_fruit =streamlit.text_input('What fruit would you like to add?','canteloupe')
+streamlit.write('The user added','canteloupe')
 
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
