@@ -53,9 +53,7 @@ if streamlit.button('Get Fruit List'):
       my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
       my_data_rows = getfruit_load_list()
       my_cnx.close()
-     
-          
-streamlit.text(my_data_rows)
+     streamlit.text(my_data_rows)
 
 
 
